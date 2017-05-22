@@ -1924,8 +1924,6 @@ var resetColors =  function(){
   $("#one1, #one2, #two, #three, #five").removeClass("blue");
 };
 
-
-
 // Snippet for testing
 /**
 var hh = 0, mm = 0;
@@ -1943,7 +1941,6 @@ setInterval(function(){
 },5000);
 
 **/
-
 
 if(firstTime){
 setHours(firstHour,firstMinute);
