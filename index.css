@@ -48,8 +48,10 @@ td, th {
 }
 
 .info-font{
-  font-size:30px;
+  font-weight: bold;
   color: #000;
+  -webkit-text-stroke-width:2px;
+  -webkit-text-stroke-color:#fff;
 }
 
 .big-font{
