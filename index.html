@@ -11,11 +11,14 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand big-font" href="#">FIBONACCI CLOCK</a>
+          <a class="navbar-brand big-font" href="#"><a href="index.html"></a>FIBONACCI CLOCK</a>
         </div>
       </div>
     </nav>
+    <center>
     <h1 class="text-primary" style="text-align:center; text-decoration:underline;">Fibonacci Clock</h1>
+    <h1 id ="time"></h1>
+    </center>
     <br>
     <table align="center">
       <tr>
@@ -48,9 +51,35 @@
           <a class="white-text" href="https://github.com/therealvasanth/" target="_blank">therealvasanth</a>
         </h4>
         <script type="text/javascript">
+        
         var d = new Date()
+
         document.write("&copy; "+d.getFullYear());
-        </script>
+        
+            function checkTime(i) {
+                if (i < 10) {
+                i = "0" + i;
+              }
+              return i;
+            }
+
+            function startTime() {
+              var today = new Date();
+              var h = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              // add a zero in front of numbers<10
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+              t = setTimeout(function() {
+                startTime()
+              }, 500);
+            }
+            startTime();
+                
+                
+                </script>
 		</footer>
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
