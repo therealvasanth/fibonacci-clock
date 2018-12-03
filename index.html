@@ -7,7 +7,7 @@
     <link href="index.css" rel="stylesheet" type="text/css" />
     <link href="bootstrap.unity.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
+  <body background="wall4.jpg">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -37,7 +37,22 @@
       <br>
         <button id="info-button" class="btn btn-primary">Click here to know about fibonacci clock</button>
     </div>
-
+	    <div style="text-align:center">
+      <br>
+      <br>
+      <br>
+		<button onclick="myFunction()">Click me to know time</button>
+    </div>
+	<br><br><br><br>
+	<div style="font-size:100px">
+	<style> 
+      marquee {
+        width: 100%;
+        color: White;
+      }
+    </style>
+    <marquee direction="scroll">Fibonacci Clock - An Open Source Web-Based Clock </marquee>
+	</div>
     <footer class="footer-distributed">
 			<div class="footer-left">
 				<h4>
@@ -47,11 +62,27 @@
         <h4>
           <a class="white-text" href="https://github.com/therealvasanth/" target="_blank">therealvasanth</a>
         </h4>
+		<h9>
+          <a class="white-text" href="https://www.google.com.ph/search?q=what+is+a+fibonacci+clock&oq=what+is+a+fibonacci+clock&aqs=chrome..69i57.9566j1j4&sourceid=chrome&ie=UTF-8" target="_blank">Know more what is a Fibonacci Clock</a>
+        <br>
+		</h9>
         <script type="text/javascript">
         var d = new Date()
         document.write("&copy; "+d.getFullYear());
         </script>
 		</footer>
+		<script>
+		function myFunction() {
+	    alert("The current time is:   " + startTime());
+        }
+	function startTime(){
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds(); 
+    return h+":"+m+":"+s; 
+    }
+	</script>
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="jquery.js"></script>
