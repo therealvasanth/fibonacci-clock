@@ -1,5 +1,5 @@
 $("#info-button").click(function(){
- 	alert("To calculate the hour : Add the values of red and blue squares.\n\n The minutes will be multiples of 5 in fibonacci clock.\n\n To calculate minutes : Add the values of green and blue squares and multiply the result with 5.\n\n In case of the absence of red and green squares or only the blue squares are to be found then the hours value will be the addition of values of blue squares and the minutes value will be the addition of values of blue squares * 5.");
+ 	alert("To calculate the hour : Add the values of red and blue squares.\n\n The minutes will be multiples of 5 in fibonacci clock.\n\n To calculate minutes : Add the values of green and blue squares and multiply the result with 5.\n\n In case of the absence of red and green squares or only the blue squares are to be found then the hours value will be the addition of values of blue squares and the minutes value will be the addition of values of blue squares * 5. Note that White Squares will be ignored.");
 });
 var d = new Date();
 var hrs = 0, mins = 0;
