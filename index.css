@@ -1,26 +1,26 @@
 .ratio1 {
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
   text-align: center;
   color:#fff;
 }
 
 .ratio2 {
-  height: 100px;
-  width:100px;
+  height: 130px;
+  width:130px;
   text-align: center;
   color:#fff;
 }
 
 .ratio3 {
-  height: 150px;
-  width: 150px;
+  height: 180px;
+  width: 180px;
   text-align: center;
   color:#fff;
 }
 
 .ratio5 {
-  width: 250px;
+  width: 280px;
   text-align: center;
   color:#fff;
 }
@@ -200,7 +200,7 @@ footer{
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #ffffff;
+	  
 	border-radius: 2px;
 
 	font-size: 20px;
